@@ -14,6 +14,7 @@ type Service struct {
 }
 
 func handleRequest(connection net.Conn) {
+	// Здесь пишем обработчик соединения
 	fmt.Println(connection)
 }
 
