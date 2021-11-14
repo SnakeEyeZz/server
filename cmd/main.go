@@ -1,8 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"server/internal/listener"
+)
 
 func main() {
-	var message = 2.2
-	fmt.Println(message)
+	var server listener.IService
+	server = &listener.Service{}
+	server.Run()
 }
