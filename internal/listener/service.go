@@ -6,7 +6,7 @@ import (
 )
 
 type IService interface {
-	Run()
+	RunServer()
 }
 
 type Service struct {
@@ -24,6 +24,7 @@ func (s *Service) RunServer() {
 		// handle error
 		return
 	}
+	fmt.Println("Server is running localhost:8080")
 	s.listener.server = ln
 	for {
 		conn, err := ln.Accept()

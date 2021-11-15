@@ -7,5 +7,5 @@ import (
 func main() {
 	var server listener.IService
 	server = &listener.Service{}
-	server.Run()
+	server.RunServer()
 }
