@@ -1,12 +1,10 @@
 package player
 
 type Player struct {
-	pos_x float32
-	pos_y float32
+	pos   Position
 	alive bool
-	size float32	
+	size  float32
 }
 
 type IPlayer interface {
-	
 }

@@ -1,10 +1,11 @@
 package player
 
-
-type Service_player struct {
-	
+type Service struct {
 }
 
 type IService interface {
+}
 
+func (s *Service) createPlayer() *Player {
+	return &Player{}
 }
